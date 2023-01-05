@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.min.css" />
+        <script src="js/juxtapose.min.js" defer></script>
+        <link rel="stylesheet" href="css/juxtapose.css">
+        <title>Toybot</title>
+    </head>
+    <body>
+        <header>
+            <div class="headingSection">
+                <div class="heading">TOYBOT</div>
+                <div class="slogan">Makes tidiness the default state.</div>
+            </div>
+            <nav>
+                <p class="selected">Home</p>
+                <p>Features</p>
+                <p>Contacts</p>
+            </nav>
+        </header>
+        <main>
+            <video class="smokeVideo" loop muted="muted" autoplay>
+                <source
+                    src="https://assets.yesstud.io/studioblvd/video/studioblvd_420.mp4"
+                />
+            </video>
+            <div class="smokeVideoHeading">The smoke video.</div>
+            <div class="floating_buttons buttons">
+                <button>Inquire</button>
+                <button>Order now!</button>
+            </div>
+            <div class="content">
+                <h2>Your TOYBOT, your clean space</h2>
+                <div class="cards_container">
+                    <div class="cards">
+                        <div class="card">
+                            <p class="heading">Kindergarten</p>
+                            <img src="media/kindergarden.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <p class="heading">Home</p>
+                            <img src="media/home.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <p class="heading">Store Play corners</p>
+                            <img src="media/store_corners.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div id="juxtapose-wrapper" class="juxtapose" data-startingposition="65%">
+                    <img src="media/roomBefore.jpg" data-label="Before" />
+                    <img src="media/roomAfter.jpg" data-label="After" />
+                </div>
+                <h2>Features you like</h2>
+                <div class="features">
+                    <div class="smallCards">
+                        <div class="small_card">
+                            <p class="heading">Config By Image</p>
+                            <p class="card_content">
+                                Take an Image of a room in it’s tidy state and
+                                feed it it to the TOYBOT, the TOYBOT will mimict
+                                his state when the room is messy
+                            </p>
+                        </div>
+                        <div class="small_card">
+                            <p class="heading">Manual Config</p>
+                            <p class="card_content">
+                                Manually configure where each toy should be
+                                placed. This configuration is done on the TOYBOT
+                                using buttons.
+                            </p>
+                        </div>
+                        <div class="small_card">
+                            <p class="heading">Default basket</p>
+                            <p class="card_content">
+                                When the TOYBOT can not correctly place the toy
+                                at its proper place, the TOYBOT will place the
+                                the toys in default basket
+                            </p>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon">
+                            <div class="icon_image">
+                                <img src="media/easy_to_use.png" alt="">
+                            </div>
+                            <p class="heading">Easy to Use</p>
+                        </div>
+                        <div class="icon">
+                            <div class="icon_image">
+                                <img src="media/safe.png" alt="">
+                            </div>
+                            <p class="heading">Safety Guaranteed</p>
+                        </div>
+                        <div class="icon">
+                            <div class="icon_image">
+                                <img src="media/save_money.png" alt="">
+                            </div>
+                            <p class="heading">Cheap</p>
+                        </div>
+                        <div class="icon">
+                            <div class="icon_image">
+                                <img src="media/save_time.png" alt="">
+                            </div>
+                            <p class="heading">Time Saving</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Pricing</h2>
+                <div class="pricing">
+                    <div class="pricing_card">
+                        <p class="text">Even cheaper than a nanny<span class="asterix">**</span></p>
+                        <p class="price">210€/ Month</p>
+                    </div>
+                    <div class="pricing_card">
+                        <p class="text">Save over 20%!<span class="asterix">*</span></p>
+                        <p class="price">2000€ / year</p>
+                    </div>
+                    <div class="pricing_card">
+                        <p class="text">Pricing of a nanny per year is up to 2500 €</p>
+                        <p class="price">Remember</p>
+                    </div>
+                    <div class="hint_texts">
+                        <p>*compared to monthly</p>
+                        <p>**pricing of a nanny per year was calculated by assuming 14,73€/h as the hourly wage and 30 minutes of tidying per day, makes around 2500 € per year</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button>Inquire</button>
+                    <button>Order now!</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="social_media">
+                <div class="icon">
+                    <img class="icon_image" src="media/instagram.png" alt=""></img>
+                    <p>toybot_instagram</p>
+                </div>
+                <div class="icon">
+                    <img class="icon_image" src="media/facebook.png" alt=""></img>
+                    <p>toybot_facebook</p>
+                </div>
+                <div class="icon">
+                    <img class="icon_image" src="media/whatsapp.png" alt=""></img>
+                    <p>toybot_whatsapp</p>
+                </div>
+                <div class="icon">
+                    <img class="icon_image" src="media/twitter.png" alt=""></img>
+                    <p>toybot_twitter</p>
+                </div>
+            </div>
+            <div class="contact_form">
+                <form>
+                    <input type="text" placeholder="Your email" />
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>Send now</button>
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>
