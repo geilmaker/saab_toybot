@@ -1,3 +1,30 @@
+<?php
+// $dir = 'sqlite:./toybot.sqlite';
+// $dbh  = new PDO($dir) or die("cannot open the database");
+
+// $query = "CREATE TABLE IF NOT EXISTS counterTable(id integer PRIMARY KEY AUTOINCREMENT NOT NULL, name varchar(255) NOT NULL, count integer NOT NULL DEFAULT 0)";
+// $dbh->query($query);
+
+// $query = "INSERT INTO counterTable(name) VALUES ('buy')";
+// $dbh->query($query);
+
+// $query = "SELECT * FROM counterTable";
+// $res = $dbh->query($query);
+
+// foreach ($res as $row)
+// {
+//     print_r($row);
+// }
+if (isset($_POST['addcounter'])) {
+    $dir = 'sqlite:./toybot.sqlite';
+    $dbh  = new PDO($dir) or die("cannot open the database");
+    $query = "UPDATE counterTable SET count = count + 1 WHERE id=1";
+    $dbh->query($query);
+    $dbh = null;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -37,10 +64,11 @@
                     spend time manually tidying up your children's toys
                     again.
                 </p>
-                <div class="buttons">
+                <form method="POST" action="" class="buttons">
+                    <input type="hidden" name="addcounter">
                     <button class="white">Try it for free!</button>
                     <button class="primary">Talk to us</button>
-                </div>
+                </form>
             </div>
         </div>
         <div class="smokeVideo">
@@ -51,10 +79,11 @@
                 home and you can try it out without any risk.</p>
         </div>
         <div class="buttonRow">
-            <div class="buttons">
+            <form method="POST" action="" class="buttons">
+                <input type="hidden" name="addcounter">
                 <button class="primary primb">Try it for free!</button>
                 <button class="white primb">Learn more</button>
-            </div>
+            </form>
         </div>
         <div class="colorRow">
             <div class="colorRowIcon">
@@ -125,10 +154,11 @@
             </div>
         </div>
         <div class="buttonRow">
-            <div class="buttons">
+            <form method="POST" action="" class="buttons">
+                <input type="hidden" name="addcounter">
                 <button class="primary primb">Get a ToyBot now!</button>
                 <button class="white primb">Chat with us</button>
-            </div>
+            </form>
         </div>
         <div style="margin-top: 8rem">
             <h2>What our customers say</h2>
@@ -188,7 +218,10 @@
                     <p class="subheading">1 month</p>
                     <p>You can test it without any risk. After the trial period you can choose either of the two payed
                         plans or decide to send it back without any fees.</p>
-                    <button class="white">Get me a ToyBot now!</button>
+                    <form method="POST" action="">
+                        <input type="hidden" name="addcounter">
+                        <button class="white">Get me a ToyBot now!</button>
+                    </form>
                 </div>
                 <div>
                     <p class="heading">yearly subscription</p>
